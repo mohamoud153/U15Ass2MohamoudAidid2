@@ -1,1 +1,6 @@
-
+body{
+  background-color: black;
+  color: white;
+  font-family: arial, sans-serif;
+  padding: 20px;
+}
