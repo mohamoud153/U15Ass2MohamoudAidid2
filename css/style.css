@@ -9,7 +9,11 @@ body {
 .topnav {
   background-color: #333;
   overflow: hidden;
-  
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Style the links inside the navigation bar */
@@ -20,7 +24,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  width: 100%;
+
 }
 
 /* Change the color of links on hover */
