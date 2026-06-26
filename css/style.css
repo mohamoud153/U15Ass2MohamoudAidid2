@@ -1,12 +1,11 @@
-body {
-  background-color: black;
-  color: white;
-  font-family: arial, sans-serif;
-  padding: 20px;
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-
+/* Navigation bar */
 nav {
     width: 100%;
     background-color: #333;
@@ -51,9 +50,38 @@ nav {
     color: #00bcd4;
 }
 
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #11aaff;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00bcd4;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #0097a7;
+}
 
 body {
-  background-color: purple;
+  background-color: black;
   color: white;
   font-family: arial, sans-serif;
   padding: 20px;
