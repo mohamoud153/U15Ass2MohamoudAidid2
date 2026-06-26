@@ -1,4 +1,4 @@
-/* Remove default spacing */
+/* Reset browser spacing */
 * {
     margin: 0;
     padding: 0;
@@ -13,36 +13,28 @@ nav {
     display: flex;
     align-items: center;
     padding: 15px 30px;
-
 }
 
 /* Logo */
 .logo {
     font-size: 20px;
     font-weight: bold;
-    
 }
 
-/* Navigation links */
+/* Navigation links (LEFT side) */
 .nav-links {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-    
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
 }
 
 .nav-links li {
-    margin-left: 20px;
-    float: left;
+    margin-right: 20px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
 }
 
 /* Hover effect */
@@ -54,35 +46,5 @@ nav {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-color: #11aaff;
-}
-
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.hero button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #00bcd4;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-.hero button:hover {
-    background-color: #0097a7;
-}
-
-body {
-  background-color: black;
-  color: white;
-  font-family: arial, sans-serif;
-  padding: 20px;
+    background-color: #f4f4f4;
 }
