@@ -43,8 +43,8 @@ nav {
 }
 
 h1{
-    font-size: 200%;
-    font: Helvetica;
+   
+    
 }
     
 /* Hero section */
@@ -53,4 +53,6 @@ h1{
     padding-top: 100px;
     padding-bottom: 2000px; 
     background-color: #375F94;
+    font: Helvetica; 
+    font-size: 200%;
 }
