@@ -5,6 +5,11 @@ body {
   padding: 20px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
