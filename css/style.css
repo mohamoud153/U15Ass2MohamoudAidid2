@@ -56,3 +56,12 @@ h1{
     font: Helvetica; 
     font-size: 200%;
 }
+
+.hero img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
