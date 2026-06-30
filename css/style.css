@@ -61,7 +61,7 @@ h1{
   width: 100%;
   max-width: 800px;
   height: auto;
-  display: block;
+  display: flex;
   margin: 0 auto;
   border-radius: 8px;
 }
