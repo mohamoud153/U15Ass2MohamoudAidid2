@@ -42,16 +42,13 @@ nav {
     color: #00bcd4;
 }
 
-h1{
-   
-    
-}
+
     
 /* Hero section */
 .hero {
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 2000px; 
+    padding-bottom: 60px; 
     background-color: #375F94;
     font: Helvetica; 
     font-size: 200%;
