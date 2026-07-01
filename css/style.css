@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+body {
+  background-color: #333;
+}
 
 /* Navigation bar */
 nav {
@@ -50,7 +53,7 @@ nav {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 60px;
-  background-color: #333; /* changed from #375F94 */
+  background-color: #375F94; /* changed from #375F94 */
   font-family: Helvetica, Arial, sans-serif;
   font-size: 200%;
 }
@@ -60,7 +63,7 @@ nav {
   width: 100%;
   height: 500px;
   overflow: hidden;
-  background-color: #333;
+  background-color: #375F94;
 }
 
 /* Makes image fill the full bar */
@@ -112,7 +115,7 @@ footer {
   background-color: #333;
   color: white;
   padding: 40px 30px 20px 30px;
-  margin-top: 40px;
+  margin-top: 0; /* change this to 0 */
 }
 
 .footer-container {
