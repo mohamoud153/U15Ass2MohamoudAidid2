@@ -3,61 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Computer Science Site</title>
+    <title>Pulse VR - Game Library</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
 
-
+    <!-- Navigation -->
     <nav>
-        <ul class="nav-links"> 
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="page1.html">Page 1</a></li>
-      <li><a href="page2.html">Page 2</a></li>   
-      <li><a href="page3.html">Page 3</a></li>
-      <li><a href="page4.html">Page 4</a></li>
+        <a href="../index.html" class="logo">&#9889; Pulse VR</a>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="page1.html" class="active">Game Library</a></li>
+            <li><a href="page2.html">Book Now</a></li>
+            <li><a href="page3.html">Pricing</a></li>
+            <li><a href="page4.html">Accessibility</a></li>
         </ul>
     </nav>
 
-    
-    <header class="hero">
-        <h1> welcome to game labarioes</h1>
-        <p>come to our vr gaming shows</p>
-        <button>Learn More</button>
-    </header>
-
-<footer>
-  <div class="footer-container">
-
-    <div class="footer-section">
-      <h3>Pulse VR</h3>
-      <p>Experience next-level immersive gaming in our state-of-the-art VR centre.</p>
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Game Library</h1>
+        <p>Explore our collection of over 50 VR games</p>
     </div>
 
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/page1.html">Game Library</a></li>
-        <li><a href="pages/page2.html">Booking</a></li>
-        <li><a href="pages/page3.html">Pricing</a></li>
-        <li><a href="pages/page4.html">Accessibility</a></li>
-      </ul>
-    </div>
+    <!-- Game Library Section -->
+    <section class="game-library">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Games</button>
+            <button class="filter-btn" data-filter="action">Action</button>
+            <button class="filter-btn" data-filter="adventure">Adventure</button>
+            <button class="filter-btn" data-filter="horror">Horror</button>
+            <button class="filter-btn" data-filter="sports">Sports</button>
+            <button class="filter-btn" data-filter="multiplayer">Multiplayer</button>
+        </div>
 
-    <div class="footer-section">
-      <h3>Contact Us</h3>
-      <p>📍 Manchester, UK</p>
-      <p>📞 0161 000 0000</p>
-      <p>✉️ info@pulsevr.co.uk</p>
-    </div>
+        <div class="games-grid" id="games-grid">
+            <!-- Games are injected by JavaScript -->
+        </div>
+    </section>
 
-  </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Pulse VR</h3>
+                <p>Experience next-level immersive gaming in our state-of-the-art VR centre.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="page1.html">Game Library</a></li>
+                    <li><a href="page2.html">Booking</a></li>
+                    <li><a href="page3.html">Pricing</a></li>
+                    <li><a href="page4.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>&#128205; Manchester, UK</p>
+                <p>&#128222; 0161 000 0000</p>
+                <p>&#9993; info@pulsevr.co.uk</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pulse VR. All rights reserved.</p>
+        </div>
+    </footer>
 
-  <div class="footer-bottom">
-    <p>&copy; 2026 Pulse VR. All rights reserved.</p>
-  </div>
-</footer>
-
+    <script src="../scripts/main.js"></script>
 </body>
+</html>
