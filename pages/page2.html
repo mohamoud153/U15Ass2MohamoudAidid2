@@ -3,61 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Computer Science Site</title>
+    <title>Pulse VR - Book a Session</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
 
-
+    <!-- Navigation -->
     <nav>
-        <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="page1.html">Page 1</a></li>
-      <li><a href="page2.html">Page 2</a></li>   
-      <li><a href="page3.html">Page 3</a></li>
-      <li><a href="page4.html">Page 4</a></li>
+        <a href="../index.html" class="logo">&#9889; Pulse VR</a>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="page1.html">Game Library</a></li>
+            <li><a href="page2.html" class="active">Book Now</a></li>
+            <li><a href="page3.html">Pricing</a></li>
+            <li><a href="page4.html">Accessibility</a></li>
         </ul>
     </nav>
 
-    
-    <header class="hero">
-        <h1> welcome to the vr gaming</h1>
-        <p>come to our vr gaming shows</p>
-        <button>Learn More</button>
-    </header>
-
-<footer>
-  <div class="footer-container">
-
-    <div class="footer-section">
-      <h3>Pulse VR</h3>
-      <p>Experience next-level immersive gaming in our state-of-the-art VR centre.</p>
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Book a Session</h1>
+        <p>Reserve your VR gaming experience today</p>
     </div>
 
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/page1.html">Game Library</a></li>
-        <li><a href="pages/page2.html">Booking</a></li>
-        <li><a href="pages/page3.html">Pricing</a></li>
-        <li><a href="pages/page4.html">Accessibility</a></li>
-      </ul>
-    </div>
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <form class="booking-form" id="booking-form" novalidate>
 
-    <div class="footer-section">
-      <h3>Contact Us</h3>
-      <p>📍 Manchester, UK</p>
-      <p>📞 0161 000 0000</p>
-      <p>✉️ info@pulsevr.co.uk</p>
-    </div>
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name">
+                <span class="form-error" id="name-error">Please enter your full name.</span>
+            </div>
 
-  </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                <span class="form-error" id="email-error">Please enter a valid email address.</span>
+            </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2026 Pulse VR. All rights reserved.</p>
-  </div>
-</footer>
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 07700 000000">
+                <span class="form-error" id="phone-error">Please enter a valid UK phone number.</span>
+            </div>
 
+            <div class="form-group">
+                <label for="date">Date *</label>
+                <input type="date" id="date" name="date">
+                <span class="form-error" id="date-error">Please select a valid future date.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Time Slot *</label>
+                <select id="time" name="time">
+                    <option value="">-- Select a time --</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                </select>
+                <span class="form-error" id="time-error">Please select a time slot.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="players">Number of Players *</label>
+                <select id="players" name="players">
+                    <option value="">-- Select --</option>
+                    <option value="1">1 Player</option>
+                    <option value="2">2 Players</option>
+                    <option value="3">3 Players</option>
+                    <option value="4">4 Players</option>
+                </select>
+                <span class="form-error" id="players-error">Please select the number of players.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="game">Game Preference</label>
+                <select id="game" name="game">
+                    <option value="no-preference">No Preference</option>
+                    <option value="action">Action</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="horror">Horror</option>
+                    <option value="sports">Sports</option>
+                    <option value="multiplayer">Multiplayer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" rows="3" placeholder="Any special requirements or requests..."></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%; font-size: 1.1rem;">Confirm Booking</button>
+
+            <div class="form-success" id="form-success">
+                &#127918; Booking confirmed! We will send a confirmation to your email shortly.
+            </div>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Pulse VR</h3>
+                <p>Experience next-level immersive gaming in our state-of-the-art VR centre.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="page1.html">Game Library</a></li>
+                    <li><a href="page2.html">Booking</a></li>
+                    <li><a href="page3.html">Pricing</a></li>
+                    <li><a href="page4.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>&#128205; Manchester, UK</p>
+                <p>&#128222; 0161 000 0000</p>
+                <p>&#9993; info@pulsevr.co.uk</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pulse VR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
 </body>
+</html>
