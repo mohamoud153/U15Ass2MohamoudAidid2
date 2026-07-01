@@ -3,61 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Computer Science Site</title>
+    <title>Pulse VR - Accessibility</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
 
-
+    <!-- Navigation -->
     <nav>
-        <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="page1.html">Page 1</a></li>
-      <li><a href="page2.html">Page 2</a></li>   
-      <li><a href="page3.html">Page 3</a></li>
-      <li><a href="page4.html">Page 4</a></li>
+        <a href="../index.html" class="logo">&#9889; Pulse VR</a>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="page1.html">Game Library</a></li>
+            <li><a href="page2.html">Book Now</a></li>
+            <li><a href="page3.html">Pricing</a></li>
+            <li><a href="page4.html" class="active">Accessibility</a></li>
         </ul>
     </nav>
 
-    
-    <header class="hero">
-        <h1> welcome to the vr gaming</h1>
-        <p>come to our vr gaming shows</p>
-        <button>Learn More</button>
-    </header>
-
-<footer>
-  <div class="footer-container">
-
-    <div class="footer-section">
-      <h3>Pulse VR</h3>
-      <p>Experience next-level immersive gaming in our state-of-the-art VR centre.</p>
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Accessibility</h1>
+        <p>Pulse VR is committed to being inclusive for all visitors</p>
     </div>
 
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/page1.html">Game Library</a></li>
-        <li><a href="pages/page2.html">Booking</a></li>
-        <li><a href="pages/page3.html">Pricing</a></li>
-        <li><a href="pages/page4.html">Accessibility</a></li>
-      </ul>
-    </div>
+    <section class="accessibility-section">
 
-    <div class="footer-section">
-      <h3>Contact Us</h3>
-      <p>📍 Manchester, UK</p>
-      <p>📞 0161 000 0000</p>
-      <p>✉️ info@pulsevr.co.uk</p>
-    </div>
+        <!-- Display Controls -->
+        <div class="accessibility-controls">
+            <h2>Site Display Settings</h2>
+            <p class="controls-subtitle">Adjust the site to suit your needs</p>
+            <div class="a11y-buttons">
+                <button class="a11y-btn" id="font-decrease" aria-label="Decrease font size">A-</button>
+                <button class="a11y-btn" id="font-reset" aria-label="Reset font size to default">A</button>
+                <button class="a11y-btn" id="font-increase" aria-label="Increase font size">A+</button>
+                <button class="a11y-btn" id="contrast-toggle" aria-label="Toggle high contrast mode">High Contrast</button>
+                <button class="a11y-btn" id="dyslexia-toggle" aria-label="Toggle dyslexia-friendly font">Dyslexia Font</button>
+            </div>
+        </div>
 
-  </div>
+        <!-- Info Cards -->
+        <div class="accessibility-info">
 
-  <div class="footer-bottom">
-    <p>&copy; 2026 Pulse VR. All rights reserved.</p>
-  </div>
-</footer>
+            <div class="info-card">
+                <h3>&#9855; Physical Accessibility</h3>
+                <p>Our centre is fully wheelchair accessible with ramps, wide corridors, and accessible VR stations. All gaming pods are designed to accommodate visitors with mobility impairments, and our staff are always on hand to assist.</p>
+            </div>
 
+            <div class="info-card">
+                <h3>&#128065; Visual Accessibility</h3>
+                <p>We offer high contrast mode and adjustable text size on this website. Inside the centre, all signage uses high contrast colours with large text. Staff assistance is always available, and our VR games include colourblind-friendly modes.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>&#128066; Hearing Accessibility</h3>
+                <p>All VR games with audio content include subtitles or visual cues. Our staff are trained to communicate effectively with visitors who are deaf or hard of hearing, and a hearing loop is available at reception.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>&#129504; Neurodiversity</h3>
+                <p>We offer quiet sessions every Tuesday morning for visitors who are sensitive to noise and busy environments. Our staff are trained in supporting neurodivergent visitors, and we can adjust lighting and audio levels on request.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>&#127760; Screen Reader Compatibility</h3>
+                <p>This website is built with semantic HTML5 and ARIA labels to ensure full compatibility with screen readers such as NVDA, JAWS, and VoiceOver. All images include descriptive alt text.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Pulse VR</h3>
+                <p>Experience next-level immersive gaming in our state-of-the-art VR centre.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="page1.html">Game Library</a></li>
+                    <li><a href="page2.html">Booking</a></li>
+                    <li><a href="page3.html">Pricing</a></li>
+                    <li><a href="page4.html">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>&#128205; Manchester, UK</p>
+                <p>&#128222; 0161 000 0000</p>
+                <p>&#9993; info@pulsevr.co.uk</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pulse VR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
 </body>
+</html>
